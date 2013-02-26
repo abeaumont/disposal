@@ -11,7 +11,7 @@ end library;
 define module disposal
   use common-dylan, exclude: { format-to-string };
   export <disposable>, disposed?, disposed?-setter;
-  export dispose, with-disposal ;
+  export dispose, dispose-object, with-disposal ;
 end module;
 
 define module file-stream

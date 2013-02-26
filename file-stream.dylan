@@ -6,10 +6,9 @@ copyright: 2013, Alfredo Beaumont
 define class <disposable-file-stream> (<disposable>, <file-stream>)
 end class <disposable-file-stream>;
 
-define method dispose (stream :: <disposable-file-stream>) => ()
-  stream.disposed? | stream.stream-open? & close(stream);
-  stream.disposed? := #t;
-end method dispose;
+define method dispose-object (stream :: <disposable-file-stream>) => ()
+  stream.stream-open? & close(stream);
+end method dispose-object;
 
 define sideways sealed method open-file-stream
     (locator :: <file-locator>, #rest keywords, #key, #all-keys)
