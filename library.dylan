@@ -1,4 +1,8 @@
 module: dylan-user
+synopsis: Disposal library.
+author: Alfredo Beaumont <alfredo.beaumont@gmail.com>
+copyright: See LICENSE file in this distribution.
+warranty: Distributed WITHOUT WARRANTY OF ANY KIND
 
 define library disposal
   use common-dylan;

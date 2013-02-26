@@ -1,7 +1,9 @@
 module: disposable-file-stream-example
 synopsis: Example of use of a disposable file stream.
 author: Alfredo Beaumont <alfredo.beaumont@gmail.com>
-copyright: 2013, Alfredo Beaumont.
+copyright: See LICENSE file in this distribution.
+warranty: Distributed WITHOUT WARRANTY OF ANY KIND.
+
 
 define function main (name :: <string>, arguments :: <vector>)
   let file-name = if (arguments.size > 0) arguments[0] else "/tmp/dfe" end;

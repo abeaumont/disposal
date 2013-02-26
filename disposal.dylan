@@ -1,7 +1,9 @@
 module: disposal
 synopsis: Disposal library.
 author: Alfredo Beaumont <alfredo.beaumont@gmail.com>
-copyright: 2013, Alfredo Beaumont.
+copyright: See LICENSE file in this distribution.
+warranty: Distributed WITHOUT WARRANTY OF ANY KIND
+
 
 define class <disposable> (<object>)
   slot disposed? :: <boolean>, init-value: #f;
