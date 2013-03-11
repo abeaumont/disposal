@@ -1,8 +1,8 @@
-library: disposal
-synopsis: Disposal library.
+library: disposable-file-stream-example
+synopsis: Disposal library example.
 author: Alfredo Beaumont <alfredo.beaumont@gmail.com>
 license: See LICENSE file in this distribution.
 warranty: Distributed WITHOUT WARRANTY OF ANY KIND
-target-type: dll
 files: library
-       disposal
+       file-stream
+       disposable-file-stream-example
