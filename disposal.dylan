@@ -5,7 +5,7 @@ copyright: See LICENSE file in this distribution.
 warranty: Distributed WITHOUT WARRANTY OF ANY KIND
 
 
-define class <disposable> (<object>)
+define open class <disposable> (<object>)
   slot disposed? :: <boolean>, init-value: #f;
 end class <disposable>;
 
@@ -28,7 +28,7 @@ end method dispose;
 // Dispose a ``<disposable>`` object.
 // This method takes care of object disposal and should be specialized
 // by disposal library users.
-define generic dispose-object (disposable :: <disposable>) => ();
+define open generic dispose-object (disposable :: <disposable>) => ();
 
 define macro with-disposal
   { with-disposal (?disposable:variable = ?resource:expression)
