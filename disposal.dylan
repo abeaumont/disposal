@@ -5,7 +5,7 @@ copyright: See LICENSE file in this distribution.
 warranty: Distributed WITHOUT WARRANTY OF ANY KIND
 
 
-define open class <disposable> (<object>)
+define open abstract class <disposable> (<object>)
   slot disposed? :: <boolean>, init-value: #f;
 end class <disposable>;
 
